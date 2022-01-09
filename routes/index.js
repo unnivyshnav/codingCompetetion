@@ -18,12 +18,12 @@ router.post('/home',function(req,res){
   console.log(mail)
 
   const transporter = nodemailer.createTransport({
-    service:"Gmail",
+    service:"hotmail",
     secure: false,
     requestCert:false,
     auth: {
-        user:"vyshnavunni25@gmail.com",
-        pass:"9847644201"
+        user:"unnivyshnav@hotmail.com",
+        pass:"suttualwaysrockzA"
 
     },
     tls : { rejectUnauthorized: false }
@@ -33,7 +33,7 @@ router.post('/home',function(req,res){
 
 
 const options = {
-    from:"vyshnavunni25@gmail.com",
+    from:"unnivyshnav@hotmail.com",
     to:mail,
     subject:"Nodemailer",
     text:message
