@@ -20,12 +20,13 @@ router.post('/home',function(req,res){
   const transporter = nodemailer.createTransport({
     service:"Gmail",
     secure: true,
+    requestCert:true,
     auth: {
         user:"vyshnavunni25@gmail.com",
         pass:"9847644201"
 
     },
-    tls : { rejectUnauthorized: false }
+    // tls : { rejectUnauthorized: false }
 
 })
 
