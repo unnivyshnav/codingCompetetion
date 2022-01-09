@@ -19,7 +19,7 @@ router.post('/home',function(req,res){
 
   const transporter = nodemailer.createTransport({
     service:"Gmail",
-    secure: true,
+    secure: false,
     requestCert:true,
     auth: {
         user:"vyshnavunni25@gmail.com",
