@@ -11,7 +11,7 @@ router.get('/home', function(req,res){
   res.render('home')
 })
 
-router.post('/home',function(req,res){
+router.post('/mailer',function(req,res){
   
   const mail= req.body.email;
   const message= req.body.message;
