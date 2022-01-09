@@ -41,11 +41,11 @@ const options = {
 transporter.sendMail(options, function(err,info){
     if(err){
         console.log(err);
-        res.send("Something Went Wrong")
+        res.render('response',{Heading :'Something Went Wrong'})
         return;
     }
     console.log("Sent:" +info.response)
-    res.send("Mail sent successfully")
+    res.render('response',{Heading :'Mail Sent Successfully'})
 })
 
 
