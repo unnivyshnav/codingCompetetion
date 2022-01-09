@@ -1,6 +1,6 @@
  <div class="container mt-5" style="width: 500px;">
  
-            <form action="/mailer" method="post" role="form" enctype="application/x-www-form-urlencoded">
+            <form action="/mailer" method="post" role="form" enctype="application/x-www-form-urlencoded" onsubmit="return validate()">
                <div class="d-flex justify-content-center mb-3" style="margin-top: 150px;">
                     <h2>Enter Email and Message</h2>
                </div>
@@ -10,6 +10,7 @@
                 <div class="form-group mt-3 ">
                     
                     <input type="text" class="form-control" name="email" id="email" placeholder="Email Address">
+                     <label for="email" id="emailfeedback" style="color:red; visibility:hidden">Enter valid e-mail id.</label>
                 </div>
                  <div class="form-group mt-3">
                     
@@ -20,3 +21,8 @@
                 </div>
             </form>
         </div>
+         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+     
+
+        <script src="javascripts/scripts.js"></script>
+         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
