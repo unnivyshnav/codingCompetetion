@@ -35,7 +35,7 @@ router.post('/home',function(req,res){
 const options = {
     from:"unnivyshnav@hotmail.com",
     to:mail,
-    subject:"Nodemailer",
+    subject:"Hi",
     text:message
 }
 
