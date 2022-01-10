@@ -29,6 +29,7 @@ router.post('/mailer',function(req,res){
   
   const mailid= req.body.email;
   const message= req.body.message;
+  const sub=req.body.subject;
   console.log(mailid)
   async function sendMail() {
     try {
@@ -51,7 +52,7 @@ router.post('/mailer',function(req,res){
       const mailOptions = {
         from: 'Vyshnav K U <kuvyshnav@gmail.com>',
         to: mailid,
-        subject: 'Hello from gmail using API',
+        subject: sub,
         text: message,
         // html: '<h3>{message}</h3>',
       };
